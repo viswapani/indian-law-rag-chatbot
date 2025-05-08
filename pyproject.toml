@@ -1,0 +1,28 @@
+[project]
+name = "inidan-law-rag-chatbot"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "viswapani",email = "cvpani@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.12,<4.0"
+dependencies = [
+    "pymupdf (>=1.25.5,<2.0.0)",
+    "langchain (>=0.3.25,<0.4.0)",
+    "tiktoken (>=0.9.0,<0.10.0)",
+    "unstructured (>=0.17.2,<0.18.0)",
+    "openai (>=1.77.0,<2.0.0)",
+    "faiss-cpu (>=1.11.0,<2.0.0)",
+    "python-dotenv (>=1.1.0,<2.0.0)",
+    "langchain-community (>=0.3.23,<0.4.0)",
+    "langchain-openai (>=0.3.16,<0.4.0)"
+]
+
+[tool.poetry]
+packages = [{include = "indian_law_rag_chatbot", from = "src"}]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
