@@ -18,11 +18,18 @@ dependencies = [
     "langchain-community (>=0.3.23,<0.4.0)",
     "langchain-openai (>=0.3.16,<0.4.0)",
     "fastapi (>=0.115.12,<0.116.0)",
-    "uvicorn (>=0.34.2,<0.35.0)"
+    "uvicorn (>=0.34.2,<0.35.0)",
+    "streamlit (>=1.45.0,<2.0.0)",
+    "requests (>=2.32.3,<3.0.0)"
 ]
 
 [tool.poetry]
-packages = [{include = "indian_law_rag_chatbot", from = "src"}]
+name = "indian-law-rag-chatbot"
+version = "0.1.0"
+description = ""
+authors = ["You cvpani@gmail.com"]
+package-mode = false  # Add this line to disable packaging mode
+
 
 
 [build-system]

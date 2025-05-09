@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.poetry
+.venv
+.env
+faiss_index/
+.git
+.gitignore
+README.*
+*.md
