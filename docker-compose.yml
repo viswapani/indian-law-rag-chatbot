@@ -20,6 +20,6 @@ services:
       dockerfile: Dockerfile.streamlit
     container_name: indian-law-rag-ui
     ports:
-      - "8501:8501"
+      - "8502:8501"
     environment:
       - API_URL=http://api:8000
